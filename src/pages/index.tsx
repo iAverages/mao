@@ -17,6 +17,11 @@ const Home: NextPage = () => {
                         description="Simple clientside base64 convertion tool"
                         href="/base64"
                     />
+                    <UtilItemCard
+                        name="JSON Pretty Print"
+                        description="Make ugly JSON pretty"
+                        href="/json"
+                    />
                 </div>
             </main>
         </Layout>
