@@ -1,5 +1,6 @@
 import Head from "next/head";
 import { ReactNode } from "react";
+import Nav from "./nav";
 
 interface LayoutProps {
     title?: string;
@@ -30,7 +31,11 @@ const Layout = ({ children, title, desc }: LayoutProps) => {
                 />
                 <title>{title ? title + " | Mao" : "Mao Utilities"}</title>
             </Head>
-            {children}
+
+            {/* The nav component wraps has the Drawer in daisyui needs the content */}
+            <Nav>
+                <div className="h-full p-5">{children}</div>
+            </Nav>
         </>
     );
 };
