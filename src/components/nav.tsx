@@ -4,11 +4,11 @@ const NavItems = ({ isDrawer = false }: { isDrawer?: boolean }) => (
     <>
         {isDrawer && (
             <li>
-                <a>Home</a>
+                <Link href="/">Home</Link>
             </li>
         )}
         <li>
-            <a>GitHub</a>
+            <Link href="https://github.com/iAverages/mao">GitHub</Link>
         </li>
     </>
 );
