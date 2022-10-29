@@ -25,29 +25,31 @@ const Base64 = () => {
 
     return (
         <Layout title="Base64 text conversion">
-            <h1 className="text-xl font-bold">Base64 convertion</h1>
-            <div className="flex h-full gap-5">
-                <div className="w-full">
-                    <label className="text-lg" htmlFor="text">
-                        Text
-                    </label>
-                    <Textarea
-                        onChange={(e) => setText(e.target.value)}
-                        value={text}
-                        id="text"
-                        className="h-full"
-                    />
-                </div>
-                <div className="w-full">
-                    <label className="text-lg" htmlFor="converted">
-                        Base64 Conversion
-                    </label>
-                    <Textarea
-                        onChange={(e) => setConverted(e.target.value)}
-                        value={converted}
-                        id="converted"
-                        className="h-full"
-                    />
+            <div className="flex h-full  flex-col">
+                <h1 className="text-xl font-bold">Base64 convertion</h1>
+                <div className="flex w-full flex-1 gap-5">
+                    <div className="flex h-full w-full flex-col">
+                        <label className="text-lg" htmlFor="text">
+                            Text
+                        </label>
+                        <Textarea
+                            onChange={(e) => setText(e.target.value)}
+                            value={text}
+                            id="text"
+                            className="flex-1"
+                        />
+                    </div>
+                    <div className="flex h-full w-full flex-col">
+                        <label className="text-lg" htmlFor="converted">
+                            Base64 Conversion
+                        </label>
+                        <Textarea
+                            onChange={(e) => setConverted(e.target.value)}
+                            value={converted}
+                            id="converted"
+                            className="flex-1"
+                        />
+                    </div>
                 </div>
             </div>
         </Layout>
