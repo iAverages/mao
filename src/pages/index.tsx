@@ -11,7 +11,7 @@ const Home: NextPage = () => {
                     App
                 </h1>
                 <p className="text-2xl text-gray-300">The tools included:</p>
-                <div className="mt-3 grid gap-3 pt-3 text-center md:grid-cols-2 lg:w-2/3">
+                <div className="mt-3 flex flex-row flex-wrap content-center items-stretch justify-around gap-4">
                     <UtilItemCard
                         name="Base64 Conversion"
                         description="Simple clientside base64 convertion tool"

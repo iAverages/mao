@@ -16,10 +16,10 @@ const Base64 = () => {
 
     return (
         <Layout title="Prettify JSON" desc="Quick and simple JSON pretty print">
-            <div className="m-5 h-full">
+            <div className="flex h-full  flex-col">
                 <h1 className="text-xl font-bold">JSON pretty print</h1>
-                <div className="flex h-full gap-5">
-                    <div className="w-full">
+                <div className="flex w-full flex-1 gap-5">
+                    <div className="flex h-full w-full flex-col">
                         <label className="text-lg" htmlFor="text">
                             Text
                         </label>
@@ -27,18 +27,18 @@ const Base64 = () => {
                             onChange={(e) => setText(e.target.value)}
                             value={text}
                             id="text"
-                            className="h-full"
+                            className="flex-1"
                         />
                     </div>
-                    <div className="w-full">
+                    <div className="flex h-full w-full flex-col">
                         <label className="text-lg" htmlFor="converted">
                             Prettiered JSON
                         </label>
                         <Textarea
-                            disabled
                             value={converted}
                             id="converted"
-                            className="h-full"
+                            className="flex-1"
+                            selectOnClick
                         />
                     </div>
                 </div>
