@@ -18,7 +18,7 @@ const Base64 = () => {
         <Layout title="Prettify JSON" desc="Quick and simple JSON pretty print">
             <div className="flex h-full  flex-col">
                 <h1 className="text-xl font-bold">JSON pretty print</h1>
-                <div className="flex w-full flex-1 gap-5">
+                <div className="flex w-full flex-1 flex-col gap-5 sm:flex-row">
                     <div className="flex h-full w-full flex-col">
                         <label className="text-lg" htmlFor="text">
                             Text
