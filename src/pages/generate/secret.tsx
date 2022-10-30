@@ -1,7 +1,7 @@
 import { ChangeEventHandler, useState } from "react";
 import Input from "../../components/input";
 import Layout from "../../components/layout";
-import { v4 as uuidv4 } from "uuid";
+
 const Uuid = () => {
     const [text, setText] = useState("");
     const [length, setLength] = useState(16);
