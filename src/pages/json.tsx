@@ -18,6 +18,7 @@ const Base64 = () => {
         <Layout title="Prettify JSON" desc="Quick and simple JSON pretty print">
             <div className="flex h-full  flex-col">
                 <h1 className="text-xl font-bold">JSON pretty print</h1>
+
                 <div className="flex w-full flex-1 flex-col gap-5 sm:flex-row">
                     <div className="flex h-full w-full flex-col">
                         <label className="text-lg" htmlFor="text">
@@ -26,6 +27,7 @@ const Base64 = () => {
                         <Textarea
                             onChange={(e) => setText(e.target.value)}
                             value={text}
+                            defaultValue={text}
                             id="text"
                             className="flex-1"
                         />
@@ -34,12 +36,7 @@ const Base64 = () => {
                         <label className="text-lg" htmlFor="converted">
                             Prettiered JSON
                         </label>
-                        <Textarea
-                            value={converted}
-                            id="converted"
-                            className="flex-1"
-                            selectOnClick
-                        />
+                        <Textarea value={converted} defaultValue={text} id="converted" className="flex-1" selectOnClick />
                     </div>
                 </div>
             </div>
