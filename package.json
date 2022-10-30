@@ -6,7 +6,9 @@
         "build": "next build",
         "dev": "next dev",
         "lint": "next lint",
-        "start": "next start"
+        "start": "next start",
+        "format": "prettier --write **/*.{cjs,mjs,ts,tsx,md,json} --ignore-path .gitignore",
+        "format:check": "prettier --check **/*.{cjs,mjs,ts,tsx,md,json} --ignore-path .gitignore"
     },
     "dependencies": {
         "@tanstack/react-query": "^4.10.0",

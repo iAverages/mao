@@ -1,19 +1,10 @@
 import { DetailedHTMLProps, TextareaHTMLAttributes, useRef } from "react";
 
-interface TextAreaProps
-    extends DetailedHTMLProps<
-        TextareaHTMLAttributes<HTMLTextAreaElement>,
-        HTMLTextAreaElement
-    > {
+interface TextAreaProps extends DetailedHTMLProps<TextareaHTMLAttributes<HTMLTextAreaElement>, HTMLTextAreaElement> {
     selectOnClick?: boolean;
 }
 
-const Textarea = ({
-    className = "",
-    selectOnClick,
-    children,
-    ...props
-}: TextAreaProps) => {
+const Textarea = ({ className = "", selectOnClick, children, ...props }: TextAreaProps) => {
     const textAreaRef = useRef<HTMLTextAreaElement>(null);
 
     const handleClick = () => {
