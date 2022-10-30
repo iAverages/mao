@@ -23,10 +23,9 @@ const Uuid = () => {
     };
 
     return (
-        <Layout title="Generate UUID v4" desc="Quickly generate a UUID v4 string">
+        <Layout title="Generate Secure Secret" desc="Quickly generate a secure string that can be used for secrets">
             <div className="m-auto flex h-full w-1/2 flex-col gap-4">
                 <h1 className="text-xl font-bold">Generate secure string to be used for secrets</h1>
-
                 <button className="btn btn-primary" onClick={handleGenerate}>
                     Generate
                 </button>
