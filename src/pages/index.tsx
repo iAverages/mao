@@ -23,6 +23,7 @@ const Home: NextPage = () => {
                         description="Quickly generate a secure string that can be used for secrets"
                         href="/generate/secret"
                     />
+                    <UtilItemCard name="String Length" description="Gives you the length of a string" href="/length" />
                 </div>
             </main>
         </Layout>
