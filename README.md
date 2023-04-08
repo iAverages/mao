@@ -9,3 +9,4 @@ Utilities:
 -   Base64 Decode (with support for images)
 -   UUID v4 Generator
 -   Secure Secret Generator
+-   Length of String
