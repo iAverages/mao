@@ -1,11 +1,8 @@
 import { useEffect, useState } from "react";
 import Layout from "../components/layout";
 import Textarea from "../components/textarea";
-import toBase64 from "../utils/toBase64";
 
-const EDITING = ["text", "base64"] as const;
-
-const Base64 = () => {
+const Length = () => {
     const [text, setText] = useState("");
     const [length, setLength] = useState(text.length);
 
@@ -33,4 +30,4 @@ const Base64 = () => {
     );
 };
 
-export default Base64;
+export default Length;
