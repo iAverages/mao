@@ -213,26 +213,26 @@
     use-sync-external-store "^1.2.0"
 
 "@trpc/client@^10.18.0":
-  version "10.20.0"
-  resolved "https://registry.yarnpkg.com/@trpc/client/-/client-10.20.0.tgz#92519c772eb3804acd0ddd313b65e5ad8f5d1619"
-  integrity sha512-DER42PjIURSl1fwVnBzMWMgo4oxbyA72nIVpOliIpNArDYkZkr7kMfXmap2J7gwaKJNMC/V5xhYc06zG9r/8pQ==
+  version "10.21.0"
+  resolved "https://registry.yarnpkg.com/@trpc/client/-/client-10.21.0.tgz#2d3e29a73a3b1bec0ef5d129473240c3b92d9e53"
+  integrity sha512-cEseC2oqhbgWpu0+KARPjb36GkdHaDPs1Yql3cinMY4CXxi0QSChg8sVDgO+fFdII6QiFtNWImK5QgnJD2Hprg==
 
 "@trpc/next@^10.18.0":
-  version "10.20.0"
-  resolved "https://registry.yarnpkg.com/@trpc/next/-/next-10.20.0.tgz#3452f4ec9f4a13127cc88af8206ecd98c284ce65"
-  integrity sha512-qtLZeaAcLU8N8lvwB9h7i/HlIKbdP5Px6oZf8HQ29a+vBaY8NXTG7Q1BkvHCc/E304xH2KWsgQ6s1sNwSZ5+UQ==
+  version "10.21.0"
+  resolved "https://registry.yarnpkg.com/@trpc/next/-/next-10.21.0.tgz#a9fc0dcf8cc7155922566a9310852d4f29d1d880"
+  integrity sha512-Qu1K+tcBTKym520dK4/HsIiteCQXj0tCbw1z86pGESgtw0pbSFF4f30gwV7D3GxBLYvC2HM7utXASwmDoheCBg==
   dependencies:
     react-ssr-prepass "^1.5.0"
 
 "@trpc/react-query@^10.18.0":
-  version "10.20.0"
-  resolved "https://registry.yarnpkg.com/@trpc/react-query/-/react-query-10.20.0.tgz#0270b0bba0ec7fadb0a74e2f870a4666a0c083fc"
-  integrity sha512-8Qkmhe0fwKJIdONHu6wHd4onNbt10MO422mqCindV8AK2ommRDFERaz6sqdPevHVu7ggLEDMJ+aWRqR2VX+yYw==
+  version "10.21.0"
+  resolved "https://registry.yarnpkg.com/@trpc/react-query/-/react-query-10.21.0.tgz#987681d77e4f30653202db10bdc8ad21526fe5b9"
+  integrity sha512-oJ3EQSiREpLelvGey9sMVce1ZyTM7unvxDCyX/z1Q7H+R3PFZVbEFjzYVoDlqaMAt0Bs2J7fQSlG0dpOHJlNxw==
 
 "@trpc/server@^10.18.0":
-  version "10.20.0"
-  resolved "https://registry.yarnpkg.com/@trpc/server/-/server-10.20.0.tgz#40e5083ddef474288b61f9e6678c22b2b9b2581c"
-  integrity sha512-pbrdgw2mO8lWygyZjGLbOq/EoWFWEJvLaxp8JmGsivMIh/IZR5mksPJdywAGQ4TBrbcqssKhuoJ/8OE9mhaveg==
+  version "10.21.0"
+  resolved "https://registry.yarnpkg.com/@trpc/server/-/server-10.21.0.tgz#1dcd616e692c034784f676ba59cacaece47fca30"
+  integrity sha512-NKgF5pcD3kPxtWncmhAPWqC/K8/DRv1voXw/KLcc63U/zEiUCZZFFFnPErQkJqtYghacUVPL2HPIRvNRlluyLA==
 
 "@types/json-schema@^7.0.9":
   version "7.0.11"
