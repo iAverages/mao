@@ -708,9 +708,9 @@ csstype@^3.0.2:
   integrity sha512-I7K1Uu0MBPzaFKg4nI5Q7Vs2t+3gWWW648spaF+Rg7pI9ds18Ugn+lvg4SHczUdKlHI5LWBXyqfS8+DufyBsgQ==
 
 daisyui@^3.0.0:
-  version "3.0.4"
-  resolved "https://registry.yarnpkg.com/daisyui/-/daisyui-3.0.4.tgz#b6872967412fa8ac9c7fd5ddb5087060494683a0"
-  integrity sha512-KfQXj1WD0U0qA+9olKqZRgqu/D6udA3+DjsT5PIdk3dOAFFbyzYzUiadiAbZ/QHe98IDBWHmVjjB51Hxg8TydQ==
+  version "3.0.20"
+  resolved "https://registry.yarnpkg.com/daisyui/-/daisyui-3.0.20.tgz#d2b1b332e34fbd43a1d8581c9b5798f490be4a5a"
+  integrity sha512-EQ0ryTM/+YfkTaRPdUvolsA8pThYnrjjvj2IEXQg31dRVxrEh+ovx5iBknKPXO6XJh2auYYfPonHBN7P88DNeQ==
   dependencies:
     colord "^2.9"
     css-selector-tokenizer "^0.8"
