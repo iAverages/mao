@@ -26,7 +26,7 @@
     },
     "devDependencies": {
         "@types/node": "18.16.17",
-        "@types/react": "18.2.9",
+        "@types/react": "18.2.10",
         "@types/react-dom": "18.2.4",
         "@types/uuid": "^9.0.0",
         "@typescript-eslint/eslint-plugin": "^5.33.0",
