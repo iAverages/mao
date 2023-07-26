@@ -725,9 +725,9 @@ csstype@^3.0.2:
   integrity sha512-I7K1Uu0MBPzaFKg4nI5Q7Vs2t+3gWWW648spaF+Rg7pI9ds18Ugn+lvg4SHczUdKlHI5LWBXyqfS8+DufyBsgQ==
 
 daisyui@^3.0.0:
-  version "3.4.0"
-  resolved "https://registry.yarnpkg.com/daisyui/-/daisyui-3.4.0.tgz#c178c1985f0692988cda0eb40bdef42395e580ac"
-  integrity sha512-s9EvNxnw/ubCIopKul+3ddASzZG+jMOmZgLJ0BFOVnxFQy6HJ5+EbMx5yY7Ef0cA6qjeUMl88SwhE94WLSLtHQ==
+  version "3.5.0"
+  resolved "https://registry.yarnpkg.com/daisyui/-/daisyui-3.5.0.tgz#eec347c9f18f76daa932000624eb0e4bf71e64e0"
+  integrity sha512-wSaeXwaYdMv4yURv9wj7kKQQN9Jyumfh/skIpZfCNkCb2jLf/so+iNKSM8l4rDN0TRvB5OccMlAvsf2UAtk2gg==
   dependencies:
     colord "^2.9"
     css-selector-tokenizer "^0.8"
