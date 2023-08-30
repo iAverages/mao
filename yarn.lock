@@ -743,9 +743,9 @@ csstype@^3.0.2:
   integrity sha512-I7K1Uu0MBPzaFKg4nI5Q7Vs2t+3gWWW648spaF+Rg7pI9ds18Ugn+lvg4SHczUdKlHI5LWBXyqfS8+DufyBsgQ==
 
 daisyui@^3.0.0:
-  version "3.6.3"
-  resolved "https://registry.yarnpkg.com/daisyui/-/daisyui-3.6.3.tgz#4ca2a9ae3de7d7c291e4f565a30a88be310699cf"
-  integrity sha512-VNWogAjx37H8kNYd2E/+r1OXc6dOvJTKlKltqIKAlNMFVfx2BIKPcmnVxaHQLfj2vhv1mYDBjgWj+1enQ+4yZA==
+  version "3.6.4"
+  resolved "https://registry.yarnpkg.com/daisyui/-/daisyui-3.6.4.tgz#c67fddddaf98dedec3aadb2c9d722ed4204511f4"
+  integrity sha512-8cFEkA2CaTKLUBvEU+9cTx6uvLSN2ZUq9fXxMkdiRS7QM79jBFv3klNkbUaPslmVh0eoeeCk0o98sjmfQ7/Cgg==
   dependencies:
     colord "^2.9"
     css-selector-tokenizer "^0.8"
@@ -2691,9 +2691,9 @@ yallist@^4.0.0:
   integrity sha512-3wdGidZyq5PB084XLES5TpOSRA3wjXAlIWMhum2kRcv/41Sn2emQ0dycQW4uZXLejwKvg6EsvbdlVL+FYEct7A==
 
 yaml@^2.1.1:
-  version "2.3.1"
-  resolved "https://registry.yarnpkg.com/yaml/-/yaml-2.3.1.tgz#02fe0975d23cd441242aa7204e09fc28ac2ac33b"
-  integrity sha512-2eHWfjaoXgTBC2jNM1LRef62VQa0umtvRiDSk6HSzW7RvS5YtkabJrwYLLEKWBc8a5U2PTSCs+dJjUTJdlHsWQ==
+  version "2.3.2"
+  resolved "https://registry.yarnpkg.com/yaml/-/yaml-2.3.2.tgz#f522db4313c671a0ca963a75670f1c12ea909144"
+  integrity sha512-N/lyzTPaJasoDmfV7YTrYCI0G/3ivm/9wdG0aHuheKowWQwGTsK0Eoiw6utmzAnI6pkJa0DUVygvp3spqqEKXg==
 
 yocto-queue@^0.1.0:
   version "0.1.0"
