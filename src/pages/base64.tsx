@@ -9,11 +9,12 @@ const Base64 = () => {
     const [text, setText] = useState("");
     const [converted, setConverted] = useState(text);
     const [editingText, setEditingText] = useState(false);
-    const [editingState, setEditingState] = useState<typeof EDITING[number]>(editingText ? "text" : "base64");
+    const [editingState, setEditingState] = useState<(typeof EDITING)[number]>(editingText ? "text" : "base64");
 
     const handleFileUpload = async (e: React.ChangeEvent<HTMLInputElement>) => {
         const files = e.target.files;
         if (!files || files.length == 0) return;
+        // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
         const file = files[0]!;
         setText("");
         setEditingText(true);
@@ -27,34 +28,25 @@ const Base64 = () => {
         link.click();
         link.remove();
     };
-
-    const encode = () => {
-        try {
-            setConverted(btoa(text));
-        } catch (error) {
-            setConverted("Invalid text");
-        }
-    };
-
-    const decode = () => {
-        try {
-            setText(atob(converted));
-        } catch (error) {
-            setText("Invalid text");
-        }
-    };
-
     useEffect(() => {
         if (editingState == "text") {
-            encode();
+            try {
+                setConverted(btoa(text));
+            } catch (error) {
+                setConverted("Invalid text");
+            }
         }
-    }, [text]);
+    }, [text, editingState]);
 
     useEffect(() => {
         if (editingState == "base64") {
-            decode();
+            try {
+                setText(atob(converted));
+            } catch (error) {
+                setText("Invalid text");
+            }
         }
-    }, [converted]);
+    }, [converted, editingState]);
 
     return (
         <Layout title="Base64 text conversion">
@@ -64,7 +56,7 @@ const Base64 = () => {
                     <h2>Upload image</h2>
                     <div className="flex gap-3 py-3">
                         <input
-                            className="file-input-bordered file-input w-full max-w-xs"
+                            className="file-input file-input-bordered w-full max-w-xs"
                             type="file"
                             onChange={handleFileUpload}
                         />
@@ -72,7 +64,7 @@ const Base64 = () => {
                             className="tooltip tooltip-right"
                             data-tip="Converts Text within the base64 conversion box to an image"
                         >
-                            <label className="btn-primary btn" htmlFor="image-converstion" onClick={handleConvertToImage}>
+                            <label className="btn btn-primary" htmlFor="image-converstion" onClick={handleConvertToImage}>
                                 Convert Text to Image
                             </label>
                         </div>

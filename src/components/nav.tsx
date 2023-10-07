@@ -20,7 +20,7 @@ const Nav: React.FC<React.PropsWithChildren> = ({ children }) => {
             <div className="drawer-content flex flex-col">
                 <div className="navbar w-full bg-primary">
                     <div className="flex-none lg:hidden">
-                        <label htmlFor="nav-header" className="btn btn-ghost btn-square">
+                        <label htmlFor="nav-header" className="btn btn-square btn-ghost">
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 fill="none"
