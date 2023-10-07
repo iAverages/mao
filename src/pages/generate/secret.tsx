@@ -8,7 +8,7 @@ const Uuid = () => {
 
     const handleGenerate = () => {
         const secret = Array.from(window.crypto.getRandomValues(new Uint8Array(Math.ceil(length / 2))), (b) =>
-            ("0" + (b & 0xff).toString(16)).slice(-2)
+            ("0" + (b & 0xff).toString(16)).slice(-2),
         ).join("");
         setText(secret);
     };
