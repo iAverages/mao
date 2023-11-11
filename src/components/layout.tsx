@@ -2,7 +2,9 @@
 
 import { Braces, Cuboid, Dna, Menu, Ruler } from "lucide-react";
 import Link, { type LinkProps } from "next/link";
+import { usePathname, useRouter } from "next/navigation";
 import { type ReactNode } from "react";
+import { Button } from "~/components/ui/button";
 import {
     Sheet,
     SheetContent,
@@ -56,17 +58,21 @@ const items = [
     },
 ];
 
-const SidebarItem = ({ ...props }: LinkProps & { children: ReactNode }) => {
+const SidebarItem = ({ children, ...props }: LinkProps & { children: ReactNode }) => {
+    const pathname = usePathname();
+
     return (
-        <Link
-            {...props}
-            // activeProps={{
-            //   className: "bg-white shadow-lg",
-            // }}
-            className={cn(
-                "flex w-full items-center gap-2 rounded-lg px-4 py-3 text-base text-zinc-700 transition-all duration-150 hover:bg-slate-300 hover:text-zinc-600",
-            )}
-        />
+        <Link {...props}>
+            <Button
+                variant={"ghost"}
+                className={cn("w-full justify-start gap-2", {
+                    "bg-accent": props.href === pathname,
+                })}
+                size={"lg"}
+            >
+                {children}
+            </Button>
+        </Link>
     );
 };
 
