@@ -1,9 +1,10 @@
 "use client";
 
-import { Braces, Cuboid, Dna, Menu, Ruler } from "lucide-react";
+import { Braces, Cuboid, Dna, Github, Menu, Ruler } from "lucide-react";
 import Link, { type LinkProps } from "next/link";
-import { usePathname, useRouter } from "next/navigation";
+import { usePathname } from "next/navigation";
 import { type ReactNode } from "react";
+import { ThemeToggle } from "~/components/theme-toggle";
 import { Button } from "~/components/ui/button";
 import {
     Sheet,
@@ -19,28 +20,12 @@ export type SidebarProps = {
     children: ReactNode;
 };
 
-// json pretty print/simplify
-// json parse
-// json stringify
-// json to yaml
-// base64 encode
-// base64 decode
-// url encode
-// url decode
-// string length
-// json to ts types
-
 const items = [
     {
         name: "JSON Pretty Print",
         icon: <Braces />,
         to: "/json-pretty-print",
     },
-    // {
-    //   name: "JSON to YAML",
-    //   icon: <MessagesSquare />,
-    //   to: "/json-to-yaml",
-    // },
     {
         name: "Base64 Encode/Decode",
         icon: <Cuboid />,
@@ -101,15 +86,27 @@ export const MobileSidebar = () => {
     );
 };
 
-const DesktopSidebar = ({ className }: { className?: string }) => {
+const DesktopSidebar = () => {
     return (
-        <div className={cn("sticky top-0 flex-col gap-2 border-r-2 p-4", className)}>
+        <div
+            className={
+                "sticky top-0 hidden w-full min-w-fit max-w-xs flex-col gap-2 border-r-2 p-4 lg:flex"
+            }
+        >
             {items.map((item) => (
                 <SidebarItem key={item.name} href={item.to}>
                     {item.icon}
                     <span>{item.name}</span>
                 </SidebarItem>
             ))}
+            <div className={"mt-auto flex w-full gap-2"}>
+                <ThemeToggle />
+                <a href={"https://github.com/iAverages/mao"} target={"_blank"}>
+                    <Button variant={"outline"} className={"gap-2"} size={"icon"}>
+                        <Github />
+                    </Button>
+                </a>
+            </div>
         </div>
     );
 };
@@ -121,7 +118,7 @@ export const Sidebar = ({ children }: SidebarProps) => {
                 <MobileSidebar />
             </div>
             <div className={"flex flex-grow"}>
-                <DesktopSidebar className={"hidden w-full min-w-fit max-w-xs lg:flex"} />
+                <DesktopSidebar />
                 <div className={"w-full"}>{children}</div>
             </div>
         </div>
@@ -130,10 +127,8 @@ export const Sidebar = ({ children }: SidebarProps) => {
 
 export const Layout = ({ children }: { children: ReactNode }) => {
     return (
-        <>
-            <Sidebar>
-                <div className={"h-full px-4 py-6"}>{children}</div>
-            </Sidebar>
-        </>
+        <Sidebar>
+            <div className={"h-full px-4 py-6"}>{children}</div>
+        </Sidebar>
     );
 };
