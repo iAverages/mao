@@ -1,18 +1,6 @@
 "use client";
 
-import {
-    Braces,
-    Cuboid,
-    Dna,
-    Home,
-    Menu,
-    MessagesSquare,
-    Ruler,
-    ScrollText,
-    Settings,
-    Ticket,
-    Users,
-} from "lucide-react";
+import { Braces, Cuboid, Dna, Menu, Ruler } from "lucide-react";
 import Link, { type LinkProps } from "next/link";
 import { type ReactNode } from "react";
 import {
