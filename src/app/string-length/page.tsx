@@ -6,7 +6,7 @@ import { Button } from "~/components/ui/button";
 import { Input } from "~/components/ui/input";
 import { useToast } from "~/components/ui/use-toast";
 
-const DEFAULT_VALUE = "{}";
+const DEFAULT_VALUE = "";
 
 const parseTo = (data: string) => {
     return data.length.toString();
@@ -38,6 +38,7 @@ export default function Json() {
                         <Button
                             variant={"ghost"}
                             className={"w-min"}
+                            value={data}
                             onClick={() => {
                                 handleCopy(parseTo(data));
                             }}
